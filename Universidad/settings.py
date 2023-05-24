@@ -124,5 +124,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = (os.path.join('C:/Users/carlo/OneDrive/Escritorio/Desktop/Informatica/Tercer Semestre/Back End/U2/Universidad/Aplicaciones/Academico/static'),)
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'Aplicaciones/Academico/static'),)
+#STATICFILES_DIRS = (os.path.join('C:/Users/carlo/OneDrive/Escritorio/Desktop/Informatica/Tercer Semestre/Back End/U2/Universidad/Aplicaciones/Academico/static'),)
 
