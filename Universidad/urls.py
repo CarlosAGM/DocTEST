@@ -20,10 +20,7 @@ from Aplicaciones.Academico.views import login_view, logout_view, home_view, ind
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', login_view, name='login'),
-    path('logout/', logout_view, name='logout'),
-    path('home/', home_view, name='home'),
-    path('index/', index, name='index'),
+    path('', index, name='index'),
     path('interfaz/', interfaz, name='interfaz'),
     path('cedula/', cedula, name='cedula'),
     path('automotriz/', automotriz, name='automotriz'),
