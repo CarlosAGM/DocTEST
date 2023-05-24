@@ -1,0 +1,78 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Interfaz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href='{% static "css/style.css" %}'>
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			
+			<div class="row justify-content-center">
+				<div class="col-md-7 col-lg-5">
+					<div class="wrap">
+						<div class="img" style="background-image: url(http://spanish.peopledaily.com.cn/NMediaFile/2020/0422/FOREIGN202004220927000161940770789.jpg);"></div>
+						<div class="login-wrap p-4 p-md-5">
+			      	<div class="d-flex">
+			      		<div class="w-100">
+			      			<h3 class="mb-4">Tus Documentos</h3>
+			      		</div>
+							
+			      	</div>
+                    
+		            <div class="form-group">
+		              
+		            </div>
+
+		            <div class="form-group">
+						<a href="{% url 'cedula'%}"><button type="submit" class="form-control btn btn-primary rounded submit px-3">Cédula de Identidad</button></a>
+		            	
+		            </div>
+		            <div class="form-group">
+						<a href="{% url 'automotriz'%}"><button type="submit" class="form-control btn btn-primary rounded submit px-3">Documentos Automotriz</button></a>
+		            	
+		            </div>
+		            <div class="form-group">
+						<a href="{% url 'qr'%}"><button type="submit" class="form-control btn btn-primary rounded submit px-3">Código QR</button> </a>
+		            	
+		            </div>
+
+                    <div>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Cédula de Identidad</label>
+                          <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Documentos Automotriz</label>
+                          <input class="form-control" type="file" id="formFile">
+                        </div>
+              
+                            </div>
+		            
+		          </form>
+		          
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src='{% static "js/jquery.min.js" %}'></script>
+    <script src='{% static "js/popper.js" %}'></script>
+    <script src='{% static "js/bootstrap.min.js" %}'></script>
+    <script src='{% static "js/main.js" %}'></script>
+
+	</body>
+</html>
+
