@@ -121,7 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 if not DEBUG:    # Tell Django to copy statics to the `staticfiles` directory
     # in your application directory on Render.
@@ -136,7 +136,7 @@ if not DEBUG:    # Tell Django to copy statics to the `staticfiles` directory
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'Aplicaciones/Academico/static'),)
 #STATICFILES_DIRS = (os.path.join('C:/Users/carlo/OneDrive/Escritorio/Desktop/Informatica/Tercer Semestre/Back End/U2/Universidad/Aplicaciones/Academico/static'),)
 
